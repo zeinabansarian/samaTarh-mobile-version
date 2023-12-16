@@ -8,7 +8,7 @@ html {
 
 @media only screen and (max-width: 576px) {
   @mixin Paragraph {
-    padding: 0 49px 28px 22px;
+    // padding: 0 49px 28px 22px;
     color: black;
     font-size: 15px;
     font-family: "Estedad";
@@ -694,8 +694,7 @@ html {
   }
 
   .projectShow {
-    background-color: #dfdfdf;
-
+    background-color: #dfdfdf;    
     &>img {
       width: -webkit-fill-available;
       margin-bottom: 7px;
@@ -766,7 +765,24 @@ html {
         @include Paragraph();
       }
     }
+    .section2{
+      padding: 0 20px 28px 20px;
+      h2 {
+        font-size: 36px;
+        font-family: "Orbitron";
+        line-height: 140%;
+        font-weight: 400;
+        padding: 115px 0;
+        color: #787878;
+        .word:first-child{
+          color: black
+        }
+      }
+      p{
+        @include Paragraph();
 
+      }
+    }
     &>h2 {
       padding: 115px 20px;
       font-size: 36px;
@@ -781,22 +797,50 @@ html {
     }
 
     .section5 {
+      padding: 0 20px;
+      h2{
+        padding: 115px 0;
+        font-size: 36px;
+        font-family: "Orbitron";
+        line-height: 140%;
+        font-weight: 400;
+        color: #787878;
+        .word:nth-last-child(-n + 2){
+          color: black
+        }
+      }
       img {
-        padding: 0 20px 28px 20px;
+        // padding: 0 20px 28px 20px;
       }
 
       p {
         @include Paragraph();
+        padding: 28px 0;
       }
     }
 
     .section6 {
+      padding: 0 20px;
+
+      h2{
+        padding: 115px 0;
+        font-size: 36px;
+        font-family: "Orbitron";
+        line-height: 140%;
+        font-weight: 400;
+        color: #787878;
+        
+        .word:nth-last-child(-n + 2){
+          color: black
+        }
+      }
       img {
-        padding: 0 20px 28px 20px;
+        // padding: 0 20px 28px 20px;
       }
 
       p {
         @include Paragraph();
+        padding: 28px 0;
       }
     }
 
@@ -977,6 +1021,11 @@ html {
           width: -webkit-fill-available;
         }
       }
+    }
+    .loadTop{
+      opacity: 0;
+      transform: translateY(50px);
+
     }
   }
 

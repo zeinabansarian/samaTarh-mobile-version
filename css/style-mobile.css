@@ -621,7 +621,27 @@ html {
     text-align: center;
   }
   .projectShow .section1 p {
-    padding: 0 49px 28px 22px;
+    color: black;
+    font-size: 15px;
+    font-family: "Estedad";
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .projectShow .section2 {
+    padding: 0 20px 28px 20px;
+  }
+  .projectShow .section2 h2 {
+    font-size: 36px;
+    font-family: "Orbitron";
+    line-height: 140%;
+    font-weight: 400;
+    padding: 115px 0;
+    color: #787878;
+  }
+  .projectShow .section2 h2 .word:first-child {
+    color: black;
+  }
+  .projectShow .section2 p {
     color: black;
     font-size: 15px;
     font-family: "Estedad";
@@ -637,34 +657,55 @@ html {
     color: #787878;
   }
   .projectShow > p {
-    padding: 0 49px 28px 22px;
     color: black;
     font-size: 15px;
     font-family: "Estedad";
     font-weight: 400;
     line-height: 140%;
   }
-  .projectShow .section5 img {
-    padding: 0 20px 28px 20px;
+  .projectShow .section5 {
+    padding: 0 20px;
+  }
+  .projectShow .section5 h2 {
+    padding: 115px 0;
+    font-size: 36px;
+    font-family: "Orbitron";
+    line-height: 140%;
+    font-weight: 400;
+    color: #787878;
+  }
+  .projectShow .section5 h2 .word:nth-last-child(-n+2) {
+    color: black;
   }
   .projectShow .section5 p {
-    padding: 0 49px 28px 22px;
     color: black;
     font-size: 15px;
     font-family: "Estedad";
     font-weight: 400;
     line-height: 140%;
+    padding: 28px 0;
   }
-  .projectShow .section6 img {
-    padding: 0 20px 28px 20px;
+  .projectShow .section6 {
+    padding: 0 20px;
+  }
+  .projectShow .section6 h2 {
+    padding: 115px 0;
+    font-size: 36px;
+    font-family: "Orbitron";
+    line-height: 140%;
+    font-weight: 400;
+    color: #787878;
+  }
+  .projectShow .section6 h2 .word:nth-last-child(-n+2) {
+    color: black;
   }
   .projectShow .section6 p {
-    padding: 0 49px 28px 22px;
     color: black;
     font-size: 15px;
     font-family: "Estedad";
     font-weight: 400;
     line-height: 140%;
+    padding: 28px 0;
   }
   .projectShow .section7 {
     margin-top: 71px;
@@ -680,7 +721,6 @@ html {
     align-self: end;
   }
   .projectShow .section7 p {
-    padding: 0 49px 28px 22px;
     color: black;
     font-size: 15px;
     font-family: "Estedad";
@@ -819,6 +859,10 @@ html {
   }
   .projectShow .relatedProj .blogItem img {
     width: -webkit-fill-available;
+  }
+  .projectShow .loadTop {
+    opacity: 0;
+    transform: translateY(50px);
   }
   .home2 {
     background-color: black;
