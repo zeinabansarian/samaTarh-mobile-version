@@ -25,11 +25,13 @@ html {
     position: fixed;
     top: 0;
     padding: 18px 0 15.5px 0;
-    background: linear-gradient(180deg,
-        rgb(249 249 249 / 44%) 0%,
-        rgb(255 255 255 / 0%) 100%);
+    background: linear-gradient(
+      180deg,
+      rgb(249 249 249 / 44%) 0%,
+      rgb(255 255 255 / 0%) 100%
+    );
 
-    &>a {
+    & > a {
       margin-left: 20px;
     }
 
@@ -83,11 +85,13 @@ html {
     justify-content: space-between;
     position: fixed;
     padding: 18px 0 15.5px 0;
-    background: linear-gradient(180deg,
-        rgba(249, 249, 249, 0.20211834733893552) 0%,
-        rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(249, 249, 249, 0.20211834733893552) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
 
-    &>a {
+    & > a {
       margin-left: 20px;
     }
 
@@ -143,8 +147,9 @@ html {
     overflow: hidden;
     height: 100vh;
 
-    &>img {
+    & > img {
       filter: brightness(0.5);
+      width: 100%;
     }
 
     .projectListSlider {
@@ -152,44 +157,109 @@ html {
       bottom: 0;
       z-index: 12;
       width: 100vw;
-
-      .swiper-slide {
-        .imgSlider {
-          position: relative;
-
-          svg {
-            position: absolute;
-            top: 0;
-            z-index: 1000;
-            left: 0;
+      .swiper{
+        margin-left: 19px;
+      }
+      .detailSwiper {
+        .detailSlider {
+          margin-bottom: 74px;
+          h2 {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 25px;
+            font-family: "Orbitron";
+            font-weight: 300;
+            line-height: 140%;
           }
-
-          img {
-            filter: brightness(0.4);
+          p {
+            font-size: 16px;
+            font-family: "Estedad";
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 200;
+            line-height: normal;
+            margin-top: 10px;
+            width: 240px;
           }
+        }
+      }
+      .mySwiper {
+        margin-bottom: 44px;
+        .swiper-slide {
+          display: flex;
+          flex-direction: column;
+          .imgSlider {
+            position: relative;
+            width: fit-content;
+            svg {
+              position: absolute;
+              top: 0;
+              z-index: 1000;
+              left: 0;
+            }
 
-          .imgTitle {
-            position: absolute;
-            z-index: 10;
-            bottom: 7px;
-            left: 7px;
+            img {
+              filter: brightness(0.4);
+            }
 
-            h3 {
-              font-size: 16px;
-              font-weight: 400;
-              color: white;
-              font-family: "Orbitron";
-              line-height: 140%;
+            .imgTitle {
+              position: absolute;
+              z-index: 10;
+              bottom: 7px;
+              left: 7px;
+
+              h3 {
+                font-size: 16px;
+                font-weight: 400;
+                color: white;
+                font-family: "Orbitron";
+                line-height: 140%;
+              }
+            }
+          }
+        }
+
+        .swiper-slide-active {
+          .imgSlider {
+            img {
+              transition: 0.5s ease;
+              filter: brightness(0.8);
             }
           }
         }
       }
-
-      .swiper-slide-active {
-        .imgSlider {
-          img {
-            filter: brightness(0.8);
-          }
+    }
+    .projectPagination{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .projectNav{
+        display: flex;
+        justify-content: end;
+        margin: 25px;
+        column-gap: 19px;
+        .prevBtn , .nextBtn{
+          padding: 7.25px 10.88px;
+          border: 1px solid white;
+        }
+      }
+      .swiper-pagination-fraction{
+        width: fit-content!important;
+        position: relative;
+        bottom: unset;
+        margin-left: 19px;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        p{
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.85);
+          font-family: "Orbitron";
+          font-weight: 400;
+          line-height: 140%;
+        }
+        span{
+          width: 25px;
+          background-color: rgba(255, 255, 255, 0.85);
+          height: 1px;
         }
       }
     }
@@ -444,7 +514,7 @@ html {
             line-height: 140%;
           }
 
-          &>a {
+          & > a {
             float: right;
             top: -15px;
             position: relative;
@@ -499,7 +569,7 @@ html {
       }
     }
 
-    &>a {
+    & > a {
       display: block;
       width: fit-content;
       margin: 0 auto;
@@ -533,7 +603,7 @@ html {
       }
     }
 
-    &>p {
+    & > p {
       font-family: "Roboto";
       font-weight: 300;
       font-size: 12px;
@@ -542,7 +612,7 @@ html {
       line-height: 183.9%;
     }
 
-    &>img {
+    & > img {
       margin-bottom: 7px;
       width: -webkit-fill-available;
     }
@@ -678,7 +748,7 @@ html {
           line-height: 140%;
         }
 
-        &>a {
+        & > a {
           float: right;
           top: -15px;
           position: relative;
@@ -694,8 +764,8 @@ html {
   }
 
   .projectShow {
-    background-color: #dfdfdf;    
-    &>img {
+    background-color: #dfdfdf;
+    & > img {
       width: -webkit-fill-available;
       margin-bottom: 7px;
     }
@@ -765,7 +835,7 @@ html {
         @include Paragraph();
       }
     }
-    .section2{
+    .section2 {
       padding: 0 20px 28px 20px;
       h2 {
         font-size: 36px;
@@ -774,16 +844,15 @@ html {
         font-weight: 400;
         padding: 115px 0;
         color: #787878;
-        .word:first-child{
-          color: black
+        .word:first-child {
+          color: black;
         }
       }
-      p{
+      p {
         @include Paragraph();
-
       }
     }
-    &>h2 {
+    & > h2 {
       padding: 115px 20px;
       font-size: 36px;
       font-family: "Orbitron";
@@ -792,21 +861,21 @@ html {
       color: #787878;
     }
 
-    &>p {
+    & > p {
       @include Paragraph();
     }
 
     .section5 {
       padding: 0 20px;
-      h2{
+      h2 {
         padding: 115px 0;
         font-size: 36px;
         font-family: "Orbitron";
         line-height: 140%;
         font-weight: 400;
         color: #787878;
-        .word:nth-last-child(-n + 2){
-          color: black
+        .word:nth-last-child(-n + 2) {
+          color: black;
         }
       }
       img {
@@ -822,16 +891,16 @@ html {
     .section6 {
       padding: 0 20px;
 
-      h2{
+      h2 {
         padding: 115px 0;
         font-size: 36px;
         font-family: "Orbitron";
         line-height: 140%;
         font-weight: 400;
         color: #787878;
-        
-        .word:nth-last-child(-n + 2){
-          color: black
+
+        .word:nth-last-child(-n + 2) {
+          color: black;
         }
       }
       img {
@@ -929,7 +998,7 @@ html {
             line-height: 140%;
           }
 
-          &>a {
+          & > a {
             float: right;
             top: -15px;
             position: relative;
@@ -1008,7 +1077,7 @@ html {
             line-height: 140%;
           }
 
-          &>a {
+          & > a {
             float: right;
             top: -15px;
             position: relative;
@@ -1022,10 +1091,9 @@ html {
         }
       }
     }
-    .loadTop{
+    .loadTop {
       opacity: 0;
       transform: translateY(50px);
-
     }
   }
 
@@ -1073,11 +1141,12 @@ html {
     .section2 {
       position: relative;
       height: 100vh;
-        .topProjectTitle{
+      .topProjectTitle {
         display: flex;
         justify-content: space-between;
         padding: 8px 20px;
-        h2,h3{
+        h2,
+        h3 {
           font-family: "Estedad";
           font-weight: 200;
           font-size: 16px;
@@ -1096,8 +1165,6 @@ html {
         padding: 0;
         margin-top: 20vh;
         li {
-
-
           position: absolute;
           width: 100%;
           height: fit-content;
@@ -1108,9 +1175,6 @@ html {
           padding: 0;
           will-change: transform;
 
-
-
-          
           border-top: 1px solid rgba(255, 255, 255, 0.85);
           border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 
@@ -1125,9 +1189,11 @@ html {
             font-family: "Orbitron";
             font-weight: 400;
 
-            h4 {}
+            h4 {
+            }
 
-            span {}
+            span {
+            }
           }
         }
       }
@@ -1184,7 +1250,6 @@ html {
     }
 
     .section4 {
-
       // overflow-x: hidden;
       .servisesItem {
         position: relative;
@@ -1340,11 +1405,14 @@ html {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     max-height: 40px !important;
-    --mask: linear-gradient(to bottom,
+    --mask: linear-gradient(
+        to bottom,
         rgba(0, 0, 0, 1) 0,
         rgba(0, 0, 0, 1) 60%,
         rgba(0, 0, 0, 0) 95%,
-        rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+        rgba(0, 0, 0, 0) 0
+      )
+      100% 50% / 100% 100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
   }
@@ -1510,7 +1578,6 @@ html {
         padding-bottom: 6px;
 
         .activeTab {
-
           h5,
           span {
             font-weight: 700 !important;
@@ -1865,7 +1932,7 @@ html {
 
   .services {
     background: black;
-    header{
+    header {
       border-bottom: 1px solid #fff4f457;
     }
     .accordion-container {
@@ -1905,13 +1972,12 @@ html {
             }
           }
 
-          button[aria-expanded="true"]+.accordion-content {
+          button[aria-expanded="true"] + .accordion-content {
             opacity: 1;
             max-height: 100%;
             transition: all 600ms linear;
             will-change: opacity, max-height;
             border-bottom: 1px solid rgba(255, 255, 255, 0.85);
-
           }
 
           .accordion-title {
@@ -1919,7 +1985,6 @@ html {
             justify-content: space-between;
             width: 100%;
           }
-
         }
 
         .accordion-item:last-child {
@@ -1942,7 +2007,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .word{
+    .word {
       transform: translateY(100%);
       opacity: 0;
     }
@@ -1953,7 +2018,7 @@ html {
       text-align: center;
       letter-spacing: 5px;
     }
-    
+
     h5 {
       letter-spacing: 4px;
       color: #e3e2e0;
@@ -1966,9 +2031,9 @@ html {
   }
 
   // test
-  .cards-scroll{
+  .cards-scroll {
     padding: 80px 0;
-    .card{
+    .card {
       overflow: hidden;
       height: 100vh;
       width: 100%;

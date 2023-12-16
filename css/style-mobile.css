@@ -106,6 +106,7 @@ html {
   }
   .projectList > img {
     filter: brightness(0.5);
+    width: 100%;
   }
   .projectList .projectListSlider {
     position: absolute;
@@ -113,33 +114,104 @@ html {
     z-index: 12;
     width: 100vw;
   }
-  .projectList .projectListSlider .swiper-slide .imgSlider {
-    position: relative;
+  .projectList .projectListSlider .swiper {
+    margin-left: 19px;
   }
-  .projectList .projectListSlider .swiper-slide .imgSlider svg {
+  .projectList .projectListSlider .detailSwiper .detailSlider {
+    margin-bottom: 74px;
+  }
+  .projectList .projectListSlider .detailSwiper .detailSlider h2 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 25px;
+    font-family: "Orbitron";
+    font-weight: 300;
+    line-height: 140%;
+  }
+  .projectList .projectListSlider .detailSwiper .detailSlider p {
+    font-size: 16px;
+    font-family: "Estedad";
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 200;
+    line-height: normal;
+    margin-top: 10px;
+    width: 240px;
+  }
+  .projectList .projectListSlider .mySwiper {
+    margin-bottom: 44px;
+  }
+  .projectList .projectListSlider .mySwiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .projectList .projectListSlider .mySwiper .swiper-slide .imgSlider {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .projectList .projectListSlider .mySwiper .swiper-slide .imgSlider svg {
     position: absolute;
     top: 0;
     z-index: 1000;
     left: 0;
   }
-  .projectList .projectListSlider .swiper-slide .imgSlider img {
+  .projectList .projectListSlider .mySwiper .swiper-slide .imgSlider img {
     filter: brightness(0.4);
   }
-  .projectList .projectListSlider .swiper-slide .imgSlider .imgTitle {
+  .projectList .projectListSlider .mySwiper .swiper-slide .imgSlider .imgTitle {
     position: absolute;
     z-index: 10;
     bottom: 7px;
     left: 7px;
   }
-  .projectList .projectListSlider .swiper-slide .imgSlider .imgTitle h3 {
+  .projectList .projectListSlider .mySwiper .swiper-slide .imgSlider .imgTitle h3 {
     font-size: 16px;
     font-weight: 400;
     color: white;
     font-family: "Orbitron";
     line-height: 140%;
   }
-  .projectList .projectListSlider .swiper-slide-active .imgSlider img {
+  .projectList .projectListSlider .mySwiper .swiper-slide-active .imgSlider img {
+    transition: 0.5s ease;
     filter: brightness(0.8);
+  }
+  .projectList .projectPagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .projectList .projectPagination .projectNav {
+    display: flex;
+    justify-content: end;
+    margin: 25px;
+    -moz-column-gap: 19px;
+         column-gap: 19px;
+  }
+  .projectList .projectPagination .projectNav .prevBtn, .projectList .projectPagination .projectNav .nextBtn {
+    padding: 7.25px 10.88px;
+    border: 1px solid white;
+  }
+  .projectList .projectPagination .swiper-pagination-fraction {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    position: relative;
+    bottom: unset;
+    margin-left: 19px;
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  .projectList .projectPagination .swiper-pagination-fraction p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Orbitron";
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .projectList .projectPagination .swiper-pagination-fraction span {
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 1px;
   }
   .contactUs {
     background-color: #dedede;
@@ -905,7 +977,8 @@ html {
     justify-content: space-between;
     padding: 8px 20px;
   }
-  .home2 .section2 .topProjectTitle h2, .home2 .section2 .topProjectTitle h3 {
+  .home2 .section2 .topProjectTitle h2,
+  .home2 .section2 .topProjectTitle h3 {
     font-family: "Estedad";
     font-weight: 200;
     font-size: 16px;
@@ -1114,11 +1187,14 @@ html {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     max-height: 40px !important;
-    --mask: linear-gradient(to bottom,
+    --mask: linear-gradient(
+        to bottom,
         rgba(0, 0, 0, 1) 0,
         rgba(0, 0, 0, 1) 60%,
         rgba(0, 0, 0, 0) 95%,
-        rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+        rgba(0, 0, 0, 0) 0
+      )
+      100% 50% / 100% 100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
   }
