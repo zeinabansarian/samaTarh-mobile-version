@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("Orbitron/Orbitron-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("Orbitron/Orbitron-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("Orbitron/Orbitron-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("Orbitron/Orbitron-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("Orbitron/Orbitron-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("Orbitron/Orbitron-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-Thin.woff2") format("woff2"),
+    url("Estedad/Estedad-Thin.woff") format("woff"),
+    url("Estedad/Estedad-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-ExtraLight.woff2") format("woff2"),
+    url("Estedad/Estedad-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-Light.woff2") format("woff2"),
+    url("Estedad/Estedad-Light.woff") format("woff"),
+    url("Estedad/Estedad-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-Regular.woff2") format("woff2"),
+    url("Estedad/Estedad-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-Medium.woff2") format("woff2"),
+    url("Estedad/Estedad-Medium.woff") format("woff"),
+    url("Estedad/Estedad-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-SemiBold.woff2") format("woff2"),
+    url("Estedad/Estedad-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-Bold.woff2") format("woff2"),
+    url("Estedad/Estedad-Bold.woff") format("woff"),
+    url("Estedad/Estedad-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-ExtraBold.woff2") format("woff2"),
+    url("Estedad/Estedad-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad/Estedad-Black.woff2") format("woff2"),
+    url("Estedad/Estedad-Black.woff") format("woff"),
+    url("Estedad/Estedad-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansWeb";
+  src: url("IRANSansWeb/002254488ce1877d55ad3693e527ad1e.eot");
+  src: url("IRANSansWeb/002254488ce1877d55ad3693e527ad1e.eot?#iefix")
+      format("embedded-opentype"),
+    url("IRANSansWeb/002254488ce1877d55ad3693e527ad1e.woff") format("woff"),
+    url("IRANSansWeb/002254488ce1877d55ad3693e527ad1e.woff2") format("woff2"),
+    url("IRANSansWeb/002254488ce1877d55ad3693e527ad1e.ttf") format("truetype"),
+    url("IRANSansWeb/002254488ce1877d55ad3693e527ad1e.svg#IRANSansWeb")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-ThinItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-LightItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-MediumItalic.ttf") format("truetype");
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto/Roboto-BlackItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+}

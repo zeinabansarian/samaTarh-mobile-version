@@ -1,0 +1,1592 @@
+@import "reset.css";
+@import "../fonts/fontStyle.css";
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 18px 0 15.5px 0;
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0.44) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  header > a {
+    margin-left: 20px;
+  }
+  header .rightSec {
+    display: flex;
+    margin-right: 52px;
+    gap: 26px;
+  }
+  header .rightSec .langChoose a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  header .rightSec .langChoose a span {
+    font-family: "Estedad";
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+  }
+  header .rightSec .menuBar {
+    position: relative;
+  }
+  header .rightSec .menuBar span {
+    width: 30.5px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 5.17px;
+  }
+  header .rightSec .menuBar span:first-child {
+    left: 7.6px;
+  }
+  header .rightSec .menuBar span:nth-child(2) {
+    top: 14px;
+  }
+  .header {
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    padding: 18px 0 15.5px 0;
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0.2021183473) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .header > a {
+    margin-left: 20px;
+  }
+  .header .rightSec {
+    display: flex;
+    margin-right: 52px;
+    gap: 26px;
+  }
+  .header .rightSec .langChoose a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .header .rightSec .langChoose a svg path {
+    fill: black;
+  }
+  .header .rightSec .langChoose a span {
+    font-family: "Estedad";
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+  }
+  .header .rightSec .menuBar {
+    position: relative;
+  }
+  .header .rightSec .menuBar span {
+    width: 30.5px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 5.17px;
+  }
+  .header .rightSec .menuBar span:first-child {
+    left: 7.6px;
+  }
+  .header .rightSec .menuBar span:nth-child(2) {
+    top: 14px;
+  }
+  .projectList {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .projectList > img {
+    filter: brightness(0.5);
+  }
+  .projectList .projectListSlider {
+    position: absolute;
+    bottom: 0;
+    z-index: 12;
+    width: 100vw;
+  }
+  .projectList .projectListSlider .swiper-slide .imgSlider {
+    position: relative;
+  }
+  .projectList .projectListSlider .swiper-slide .imgSlider svg {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+  }
+  .projectList .projectListSlider .swiper-slide .imgSlider img {
+    filter: brightness(0.4);
+  }
+  .projectList .projectListSlider .swiper-slide .imgSlider .imgTitle {
+    position: absolute;
+    z-index: 10;
+    bottom: 7px;
+    left: 7px;
+  }
+  .projectList .projectListSlider .swiper-slide .imgSlider .imgTitle h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    font-family: "Orbitron";
+    line-height: 140%;
+  }
+  .projectList .projectListSlider .swiper-slide-active .imgSlider img {
+    filter: brightness(0.8);
+  }
+  .contactUs {
+    background-color: #dedede;
+  }
+  .contactUs .googleMap {
+    filter: grayscale(100%) invert(100%);
+  }
+  .contactUs .googleMap iframe {
+    width: -webkit-fill-available;
+  }
+  .contactUs .contactDetail {
+    padding: 25px 20px;
+  }
+  .contactUs .contactDetail h1 {
+    position: relative;
+    font-size: 32px;
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+  }
+  .contactUs .contactDetail h1::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+  }
+  .contactUs .contactDetail .contactInfo {
+    margin-bottom: 34px;
+  }
+  .contactUs .contactDetail .contactInfo h3 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: black;
+  }
+  .contactUs .contactDetail .contactInfo p {
+    font-size: 12px;
+    font-family: "IRANSansWeb";
+    font-style: normal;
+    color: black;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+  .contactUs .contactDetail .contactInfo .socialBtns {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  .contactUs .contactDetail .contactInfo:last-child {
+    margin: 0;
+  }
+  .topSecFooter {
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+  }
+  .topSecFooter h1 {
+    color: white;
+    font-family: "Orbitron";
+    font-weight: 400;
+    opacity: 0.85;
+    font-size: 25px;
+    line-height: 140%;
+    position: relative;
+    padding-left: 20px;
+  }
+  footer {
+    background-color: black;
+  }
+  footer .menuList {
+    padding: 25px 20px 0 20px;
+    position: relative;
+  }
+  footer .menuList ul {
+    margin-top: 20px;
+  }
+  footer .menuList ul li {
+    margin-bottom: 10px;
+  }
+  footer .menuList ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-size: 18px;
+  }
+  footer .menuList::after {
+    content: "";
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: -14px;
+    left: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  footer .footerDetail {
+    padding: 0 20px;
+    margin-top: 28px;
+  }
+  footer .footerDetail .footerInfo {
+    margin-top: 14px;
+  }
+  footer .footerDetail .footerInfo span {
+    font-size: 12px;
+    line-height: 140%;
+    font-family: "Estedad";
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+  }
+  footer .footerDetail .footerInfo p {
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 12px;
+    font-family: "Estedad";
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  footer .footerDetail .footerInfo .socialBtns {
+    display: flex;
+    margin-top: 12px;
+    gap: 24px;
+  }
+  footer .subFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 22px;
+    margin-top: 37px;
+    position: relative;
+  }
+  footer .subFooter p {
+    font-family: "Estedad";
+    font-weight: 400;
+    color: white;
+    font-size: 12px;
+  }
+  footer .subFooter::before {
+    content: "";
+    position: absolute;
+    width: -webkit-fill-available;
+    top: -14px;
+    left: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .blogs {
+    background-color: #dddddd;
+  }
+  .blogs h1 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    font-size: 25px;
+    line-height: 140%;
+    position: relative;
+    padding-left: 19px;
+    padding-top: 74px;
+  }
+  .blogs h1::after {
+    content: "";
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: -9px;
+    left: 0;
+    height: 1px;
+    background-color: black;
+  }
+  .blogs .blogList {
+    margin-top: 43px;
+  }
+  .blogs .blogList .blogItem {
+    padding: 11px 20px;
+  }
+  .blogs .blogList .blogItem .blogDetail {
+    margin-top: 11px;
+  }
+  .blogs .blogList .blogItem .blogDetail .blogTitle {
+    display: flex;
+    gap: 53px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .blogs .blogList .blogItem .blogDetail .blogTitle a {
+    text-decoration: none;
+  }
+  .blogs .blogList .blogItem .blogDetail .blogTitle a h2 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .blogs .blogList .blogItem .blogDetail .blogTitle span {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .blogs .blogList .blogItem .blogDetail p {
+    font-family: "Estedad";
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 140%;
+  }
+  .blogs .blogList .blogItem .blogDetail > a {
+    float: right;
+    top: -15px;
+    position: relative;
+    font-size: 12px;
+    color: black;
+  }
+  .blogs .blogList .blogItem img {
+    width: -webkit-fill-available;
+  }
+  .projectCat {
+    padding: 114px 20px 7px 20px;
+    background-color: #dedede;
+    scroll-behavior: smooth;
+  }
+  .projectCat .projectCatItem {
+    margin-bottom: 45px;
+  }
+  .projectCat .projectCatItem img {
+    width: -webkit-fill-available;
+  }
+  .projectCat .projectCatItem a {
+    text-decoration: none;
+  }
+  .projectCat .projectCatItem .projectCatTitle {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .projectCat .projectCatItem .projectCatTitle h2 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .projectCat .projectCatItem .projectCatTitle span {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .projectCat > a {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: -13px;
+    scroll-behavior: smooth;
+  }
+  .blogShow {
+    background-color: #dedede;
+  }
+  .blogShow .blogShowTitle {
+    padding: 114px 36px 28px 18px;
+  }
+  .blogShow .blogShowTitle h1 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    font-size: 32px;
+  }
+  .blogShow .blogShowTitle p {
+    margin-top: 40px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .blogShow > p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 12px;
+    font-style: normal;
+    padding: 28px 20px;
+    line-height: 183.9%;
+  }
+  .blogShow > img {
+    margin-bottom: 7px;
+    width: -webkit-fill-available;
+  }
+  .blogShow .relatedProjects {
+    background-color: black;
+  }
+  .blogShow .relatedProjects h2 {
+    font-family: "Orbitron";
+    padding: 0 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140%;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .blogShow .relatedProjects h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+  }
+  .blogShow .relatedProjects .projectBox {
+    padding: 0 20px;
+    padding-bottom: 11px;
+  }
+  .blogShow .relatedProjects .projectBox .projBoxTitle {
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blogShow .relatedProjects .projectBox .projBoxTitle h4 {
+    font-family: "Orbitron";
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .blogShow .relatedProjects .projectBox .projBoxTitle span {
+    font-family: "Orbitron";
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .blogShow .relatedProjects .projectBox .projBoxTitle a {
+    font-size: 12px;
+    font-family: "Estedad";
+    font-weight: 200px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .blogShow .relatedProjects .projectBox img {
+    width: -webkit-fill-available;
+  }
+  .relatedBlogs h2 {
+    font-family: "Orbitron";
+    padding: 0 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140%;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .relatedBlogs h2::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+  }
+  .relatedBlogs .blogItem {
+    padding: 11px 20px;
+  }
+  .relatedBlogs .blogItem .blogDetail {
+    margin-top: 11px;
+  }
+  .relatedBlogs .blogItem .blogDetail .blogTitle {
+    display: flex;
+    gap: 53px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .relatedBlogs .blogItem .blogDetail .blogTitle a {
+    text-decoration: none;
+  }
+  .relatedBlogs .blogItem .blogDetail .blogTitle a h3 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .relatedBlogs .blogItem .blogDetail .blogTitle span {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .relatedBlogs .blogItem .blogDetail p {
+    font-family: "Estedad";
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 140%;
+  }
+  .relatedBlogs .blogItem .blogDetail > a {
+    float: right;
+    top: -15px;
+    position: relative;
+    font-size: 12px;
+    color: black;
+  }
+  .relatedBlogs .blogItem img {
+    width: -webkit-fill-available;
+  }
+  .projectShow {
+    background-color: #dfdfdf;
+  }
+  .projectShow > img {
+    width: -webkit-fill-available;
+    margin-bottom: 7px;
+  }
+  .projectShow .projectTitle {
+    padding: 136px 19px 0 19px;
+  }
+  .projectShow .projectTitle span {
+    font-family: "Estedad";
+    font-weight: 300;
+    color: black;
+    font-size: 16px;
+  }
+  .projectShow .projectTitle h1 {
+    font-family: "Orbitron";
+    font-size: 54px;
+    color: black;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .projectShow .projectDetail {
+    margin-top: 25.82px;
+    padding: 0 20px;
+  }
+  .projectShow .projectDetail ul {
+    padding-right: 20px;
+  }
+  .projectShow .projectDetail ul li {
+    display: flex;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .projectShow .projectDetail ul li h5 {
+    font-family: "Estedad";
+    font-size: 15px;
+    font-weight: 600;
+    color: #838383;
+    line-height: 140%;
+    width: 18.7vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .projectShow .projectDetail ul li span {
+    font-family: "Estedad";
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    line-height: 140%;
+  }
+  .projectShow .section1 {
+    margin-top: 92px;
+    padding: 0 12px 30px 20px;
+  }
+  .projectShow .section1 p:first-child {
+    text-align: center;
+  }
+  .projectShow .section1 p {
+    padding: 0 49px 28px 22px;
+    color: black;
+    font-size: 15px;
+    font-family: "Estedad";
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .projectShow > h2 {
+    padding: 115px 20px;
+    font-size: 36px;
+    font-family: "Orbitron";
+    line-height: 140%;
+    font-weight: 400;
+    color: #787878;
+  }
+  .projectShow > p {
+    padding: 0 49px 28px 22px;
+    color: black;
+    font-size: 15px;
+    font-family: "Estedad";
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .projectShow .section5 img {
+    padding: 0 20px 28px 20px;
+  }
+  .projectShow .section5 p {
+    padding: 0 49px 28px 22px;
+    color: black;
+    font-size: 15px;
+    font-family: "Estedad";
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .projectShow .section6 img {
+    padding: 0 20px 28px 20px;
+  }
+  .projectShow .section6 p {
+    padding: 0 49px 28px 22px;
+    color: black;
+    font-size: 15px;
+    font-family: "Estedad";
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .projectShow .section7 {
+    margin-top: 71px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 22px;
+  }
+  .projectShow .section7 img {
+    padding: 0 20px 0 20px;
+  }
+  .projectShow .section7 img:last-child {
+    align-self: end;
+  }
+  .projectShow .section7 p {
+    padding: 0 49px 28px 22px;
+    color: black;
+    font-size: 15px;
+    font-family: "Estedad";
+    font-weight: 400;
+    line-height: 140%;
+    padding: 28px 49px 28px 22px;
+  }
+  .projectShow .relatedBlogs h2 {
+    font-family: "Orbitron";
+    padding: 0 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140%;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .projectShow .relatedBlogs h2::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+  }
+  .projectShow .relatedBlogs .blogItem {
+    padding: 11px 20px;
+  }
+  .projectShow .relatedBlogs .blogItem .blogDetail {
+    margin-top: 11px;
+  }
+  .projectShow .relatedBlogs .blogItem .blogDetail .blogTitle {
+    display: flex;
+    gap: 53px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .projectShow .relatedBlogs .blogItem .blogDetail .blogTitle a {
+    text-decoration: none;
+  }
+  .projectShow .relatedBlogs .blogItem .blogDetail .blogTitle a h3 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .projectShow .relatedBlogs .blogItem .blogDetail .blogTitle span {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .projectShow .relatedBlogs .blogItem .blogDetail p {
+    font-family: "Estedad";
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 140%;
+  }
+  .projectShow .relatedBlogs .blogItem .blogDetail > a {
+    float: right;
+    top: -15px;
+    position: relative;
+    font-size: 12px;
+    color: black;
+  }
+  .projectShow .relatedBlogs .blogItem img {
+    width: -webkit-fill-available;
+  }
+  .projectShow .relatedProj h2 {
+    font-family: "Orbitron";
+    padding: 0 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140%;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .projectShow .relatedProj h2::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+  }
+  .projectShow .relatedProj .blogItem {
+    padding: 11px 20px;
+  }
+  .projectShow .relatedProj .blogItem .blogDetail {
+    margin-top: 11px;
+  }
+  .projectShow .relatedProj .blogItem .blogDetail .blogTitle {
+    display: flex;
+    gap: 53px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .projectShow .relatedProj .blogItem .blogDetail .blogTitle a {
+    text-decoration: none;
+  }
+  .projectShow .relatedProj .blogItem .blogDetail .blogTitle a h3 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .projectShow .relatedProj .blogItem .blogDetail .blogTitle span {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+    font-size: 14px;
+  }
+  .projectShow .relatedProj .blogItem .blogDetail p {
+    font-family: "Estedad";
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 140%;
+  }
+  .projectShow .relatedProj .blogItem .blogDetail > a {
+    float: right;
+    top: -15px;
+    position: relative;
+    font-size: 12px;
+    color: black;
+  }
+  .projectShow .relatedProj .blogItem img {
+    width: -webkit-fill-available;
+  }
+  .home2 {
+    background-color: black;
+  }
+  .home2 .fixTitle {
+    position: sticky;
+    width: -webkit-fill-available;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    z-index: 1000;
+    padding: 8px 20px;
+    top: 67px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .home2 .fixTitle h1,
+  .home2 .fixTitle span {
+    font-size: 25px;
+    line-height: 140%;
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .home2 .section1 {
+    position: relative;
+    padding-top: 75px;
+  }
+  .home2 .section1 video {
+    width: -webkit-fill-available;
+    filter: brightness(0.47);
+    position: relative;
+    top: -96px;
+  }
+  .home2 .section2 {
+    position: relative;
+    height: 100vh;
+  }
+  .home2 .section2 .topProjectTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+  }
+  .home2 .section2 .topProjectTitle h2, .home2 .section2 .topProjectTitle h3 {
+    font-family: "Estedad";
+    font-weight: 200;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .home2 .section2 ul {
+    width: 100%;
+    height: 100%;
+    max-height: 65vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin-top: 20vh;
+  }
+  .home2 .section2 ul li {
+    position: absolute;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    will-change: transform;
+    border-top: 1px solid rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .home2 .section2 ul li a {
+    text-decoration: none;
+    padding: 11px 21px;
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 140%;
+    font-family: "Orbitron";
+    font-weight: 400;
+  }
+  .home2 .section3 {
+    position: relative;
+  }
+  .home2 .section3 img {
+    width: -webkit-fill-available;
+  }
+  .home2 .section3 .detailAbout {
+    background-color: #d9d9d9;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .home2 .section3 .detailAbout h5 {
+    font-size: 16px;
+    padding: 13px 0;
+    color: black;
+    font-family: "Estedad";
+    font-weight: 400;
+  }
+  .home2 .section3 .detailAbout p:nth-child(2) {
+    font-size: 14px;
+    line-height: 152%;
+    color: black;
+    font-family: "Orbitron";
+    font-weight: 500;
+    padding: 0 12px 0 15px;
+  }
+  .home2 .section3 .detailAbout p:nth-child(3) {
+    font-size: 14px;
+    font-family: "Estedad";
+    padding: 19px 12px 13px 20px;
+    font-weight: 400;
+    color: black;
+    line-height: 140%;
+  }
+  .home2 .section3 .detailAbout a {
+    font-weight: 400;
+    line-height: 140%;
+    color: black;
+    font-size: 16px;
+    font-family: "Estedad";
+    text-underline-offset: 6px;
+  }
+  .home2 .section4 .servisesItem {
+    position: relative;
+    padding: 0 30px 26px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .home2 .section4 .servisesItem .serviceTitle {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 18px 0 0 20px;
+  }
+  .home2 .section4 .servisesItem .serviceTitle h2 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-family: "Orbitron";
+    font-weight: 400;
+  }
+  .home2 .section4 .servisesItem p {
+    padding: 13px 30px 18px 74px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Estedad";
+    font-weight: 300;
+    padding-left: 54px;
+    margin-top: 13px;
+    line-height: 140%;
+  }
+  .home2 .section4 .servisesItem span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute;
+  }
+  .home2 .section4 .servisesItem:last-child {
+    border: none;
+  }
+  .home2 .section5 {
+    position: relative;
+  }
+  .home2 .section5 .projectsSection {
+    padding: 8px 20px 0 20px;
+  }
+  .home2 .section5 .projectsSection .projectItem img {
+    width: -webkit-fill-available;
+  }
+  .home2 .section5 .projectsSection .projectItem .projectTitle {
+    padding: 11px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .home2 .section5 .projectsSection .projectItem .projectTitle h3,
+  .home2 .section5 .projectsSection .projectItem .projectTitle span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 140%;
+    font-family: "Orbitron";
+    font-weight: 400;
+  }
+  .home2 .section5 .projectsSection .projectItem .projectTitle a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    font-family: "Estedad";
+    line-height: 140%;
+    font-weight: 200;
+  }
+  .home2 .section6 {
+    background-color: #d9d9d9;
+  }
+  .home2 .section6 .fixTitle {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .home2 .section6 .fixTitle h1,
+  .home2 .section6 .fixTitle span {
+    color: black;
+  }
+  .home2 .section6 .blogsSection {
+    padding: 7px 20px 0 20px;
+  }
+  .home2 .section6 .blogsSection .BlogItem img {
+    width: -webkit-fill-available;
+  }
+  .home2 .section6 .blogsSection .BlogItem .blogDetail {
+    padding: 11px 0;
+  }
+  .home2 .section6 .blogsSection .BlogItem .blogDetail p {
+    font-size: 14px;
+    color: black;
+    line-height: 140%;
+    font-family: "Estedad";
+    font-weight: 400;
+    text-align: justify;
+    display: inline;
+  }
+  .home2 .section6 .blogsSection .BlogItem .blogDetail a {
+    font-size: 12px;
+    color: black;
+    line-height: 140%;
+    font-family: "Estedad";
+    font-weight: 300;
+    float: right;
+    text-underline-offset: 4px;
+    margin-top: 2px;
+  }
+  .home2 .section6 .blogsSection .BlogItem .blogDetail .blogTitle {
+    display: flex;
+    -moz-column-gap: 54px;
+         column-gap: 54px;
+    margin-bottom: 8px;
+  }
+  .home2 .section6 .blogsSection .BlogItem .blogDetail .blogTitle h4,
+  .home2 .section6 .blogsSection .BlogItem .blogDetail .blogTitle span {
+    font-size: 14px;
+    color: black;
+    font-family: "Orbitron";
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .home2 .section7 {
+    position: relative;
+  }
+  .openParagraph {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 40px !important;
+    --mask: linear-gradient(to bottom,
+        rgba(0, 0, 0, 1) 0,
+        rgba(0, 0, 0, 1) 60%,
+        rgba(0, 0, 0, 0) 95%,
+        rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+  .openParagraph.active {
+    max-height: 500px !important;
+    transition: max-height 0.5s ease-in-out;
+    -webkit-mask: none;
+            mask: none;
+  }
+  .rotateMore svg {
+    transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+  }
+  .aboutUs {
+    background-color: black;
+  }
+  .aboutUs .section1 img {
+    width: -webkit-fill-available;
+  }
+  .aboutUs .section1 .aboutTitle {
+    padding: 0 20px;
+    position: relative;
+    top: -35px;
+  }
+  .aboutUs .section1 .aboutTitle h1 {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Orbitron";
+    font-weight: 700;
+  }
+  .aboutUs .section1 .aboutTitle p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    font-family: "Estedad";
+    line-height: 140%;
+    font-weight: 200;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  .aboutUs .section1 .aboutTitle span {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    display: block;
+  }
+  .aboutUs .section1 .aboutTitle span::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.85);
+    right: 0;
+    top: 0;
+  }
+  .aboutUs .section1 .aboutTitle span::after {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.85);
+    left: 0;
+    top: 8px;
+  }
+  .aboutUs .section2 {
+    padding-bottom: 14px;
+  }
+  .aboutUs .section2 .aboutSlide p {
+    padding: 14px 22px 0 19px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    font-family: "Estedad";
+    font-weight: 300;
+    line-height: 140%;
+  }
+  .aboutUs .section2 .aboutPagination {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUs .section2 .aboutPagination .swiper-pagination {
+    color: rgba(255, 255, 255, 0.85);
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    top: 0;
+    font-size: 12px;
+    font-family: "Estedad";
+    line-height: 140%;
+    font-weight: 200;
+    margin: 0 16px;
+  }
+  .aboutUs .section2 .aboutPagination .swiper-pagination span {
+    margin: 0 8px;
+  }
+  .aboutUs .section3 h2 {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Orbitron";
+    font-weight: 700;
+    padding: 0px 20px 14px 20px;
+  }
+  .aboutUs .section3 p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    font-family: "Estedad";
+    line-height: 140%;
+    font-weight: 200;
+    padding: 0 25px 21px 15px;
+  }
+  .aboutUs .section4 {
+    background-color: white;
+  }
+  .aboutUs .section4 img {
+    width: -webkit-fill-available;
+  }
+  .aboutUs .section4 .teamTitle {
+    padding: 29px 18px 0 21px;
+  }
+  .aboutUs .section4 .teamTitle h3 {
+    font-size: 25px;
+    color: black;
+    font-family: "Orbitron";
+    font-weight: 700;
+  }
+  .aboutUs .section4 .teamTitle p {
+    color: black;
+    font-size: 12px;
+    font-family: "Estedad";
+    line-height: 140%;
+    margin-top: 15px;
+    font-weight: 300;
+  }
+  .aboutUs .section4 .aboutTabs {
+    padding-bottom: 6px;
+  }
+  .aboutUs .section4 .aboutTabs .activeTab h5,
+  .aboutUs .section4 .aboutTabs .activeTab span {
+    font-weight: 700 !important;
+  }
+  .aboutUs .section4 .aboutTabs .tabItem {
+    border-top: 1px solid black;
+  }
+  .aboutUs .section4 .aboutTabs .tabItem .tabDetail {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0 !important;
+    transition-delay: 0;
+  }
+  .aboutUs .section4 .aboutTabs .tabItem .tabDetail.active {
+    max-height: 500px !important;
+    transition: max-height 0.5s ease-in-out;
+    transition-delay: 0;
+  }
+  .aboutUs .section4 .aboutTabs .tabItem .tabTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px;
+  }
+  .aboutUs .section4 .aboutTabs .tabItem .tabTitle h5,
+  .aboutUs .section4 .aboutTabs .tabItem .tabTitle span {
+    font-family: "Orbitron";
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    line-height: 140%;
+  }
+  .aboutUs .section4 .aboutTabs .tabItem:last-child {
+    border-bottom: 1px solid black;
+  }
+  .aboutUs .section5 {
+    padding: 16px 20px 40px 20px;
+  }
+  .aboutUs .section5 .title5 h2 {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Orbitron";
+    font-weight: 700;
+  }
+  .aboutUs .section5 .title5 p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    font-family: "Estedad";
+    line-height: 140%;
+    margin-top: 15px;
+    font-weight: 300;
+  }
+  .aboutUs .section5 .accordionSection {
+    margin-top: 28px;
+  }
+  .aboutUs .section5 .accordionSection .accordionItem {
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    padding: 16px 10px 16px 16px;
+    background-color: black;
+    margin-bottom: 15px;
+  }
+  .aboutUs .section5 .accordionSection .accordionItem h4 {
+    font-size: 20px;
+    margin-top: 3px;
+    font-weight: 400;
+    font-family: "Orbitron";
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .aboutUs .section5 .accordionSection .accordionItem p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 140%;
+    font-weight: 300;
+    margin-top: 12px;
+    font-family: "Estedad";
+  }
+  .aboutUs .section6 {
+    background-color: #d9d9d9;
+  }
+  .aboutUs .section6 .title6 {
+    position: relative;
+    padding: 16px 20px 10px 20px;
+  }
+  .aboutUs .section6 .title6 h2 {
+    font-size: 25px;
+    color: black;
+    font-family: "Orbitron";
+    font-weight: 700;
+  }
+  .aboutUs .section6 .title6 p {
+    color: black;
+    font-size: 12px;
+    font-family: "Estedad";
+    line-height: 140%;
+    margin-top: 15px;
+    font-weight: 300;
+  }
+  .aboutUs .section6 .title6::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: -15px;
+    left: 0;
+  }
+  .aboutUs .section6 .roleSection {
+    padding: 44px 4px 44px 12px;
+    display: flex;
+    align-items: end;
+    overflow-x: hidden;
+    justify-content: space-between;
+  }
+  .aboutUs .section6 .roleSection .roleSlider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUs .section6 .roleSection .roleSlider .roleNext {
+    position: absolute;
+    z-index: 1000;
+    bottom: -20px;
+  }
+  .aboutUs .section6 .roleSection .roleSlider .rolePrev {
+    position: absolute;
+    z-index: 1000;
+    top: -20px;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper {
+    height: 200px;
+    position: relative;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-wrapper {
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide {
+    text-align: center;
+    width: auto;
+    flex-shrink: 0;
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper h3 {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Orbitron";
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide-next h3,
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide-prev h3 {
+    font-size: 14px;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide-next svg,
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide-prev svg {
+    width: 14px;
+    height: 14px;
+    transition: 0.2s ease-in-out;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide-active h3 {
+    color: black;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide-active svg {
+    transition: 0.2s ease-in-out;
+    width: 16px;
+    height: 16px;
+  }
+  .aboutUs .section6 .roleSection .roleSwiper .swiper-slide-active svg circle {
+    fill: black;
+  }
+  .aboutUs .section6 .imgSec {
+    width: 61.7vw;
+  }
+  .openMenu1 {
+    background-color: black;
+    height: 100vh;
+    width: 100vh;
+    position: fixed;
+  }
+  .openMenu1 li.activeMenuLi {
+    background-color: #d9d9d9;
+    transition: 0.3s ease-in-out;
+  }
+  .openMenu1 li.activeMenuLi a {
+    color: black;
+  }
+  .openMenu1 li.activeMenuLi svg {
+    transition: 0.3s ease-in-out;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: scaleX(1);
+    margin-right: 24px;
+    transform-origin: left;
+  }
+  .openMenu1 ul {
+    margin-top: 9vh;
+  }
+  .openMenu1 ul li:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .openMenu1 ul li {
+    transition: 0.3s ease-in-out;
+    padding: 4vh 4.5vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .openMenu1 ul li svg {
+    width: 0;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .openMenu1 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    line-height: 140%;
+    font-weight: 400;
+    font-family: "Orbitron";
+  }
+  .openMenu2 {
+    background-color: black;
+    height: 100%;
+    width: 100vh;
+    position: sticky;
+  }
+  .openMenu2 li.activeMenuLi {
+    background-color: #d9d9d9;
+    transition: 0.3s ease-in-out;
+  }
+  .openMenu2 li.activeMenuLi img {
+    height: 100%;
+    transition: all 600ms linear;
+    will-change: height;
+  }
+  .openMenu2 li.activeMenuLi a {
+    color: black;
+  }
+  .openMenu2 li.activeMenuLi svg {
+    transition: 0.3s ease-in-out;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: scaleX(1);
+    margin-right: 24px;
+    transform-origin: left;
+  }
+  .openMenu2 ul {
+    padding-top: 9vh;
+  }
+  .openMenu2 ul li:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .openMenu2 ul li {
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .openMenu2 ul li img {
+    width: 100%;
+    height: 0;
+    transform: translateY(4px);
+  }
+  .openMenu2 ul li svg {
+    width: 0;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .openMenu2 ul li a {
+    padding: 4vh 4.5vw;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    line-height: 140%;
+    font-weight: 400;
+    font-family: "Orbitron";
+  }
+  .services {
+    background: black;
+  }
+  .services header {
+    border-bottom: 1px solid rgba(255, 244, 244, 0.3411764706);
+  }
+  .services .accordion-container {
+    padding: 101px 20px 44.5px 15.5px;
+  }
+  .services .accordion-container .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    border-right: 1px solid rgba(255, 255, 255, 0.85);
+    border-left: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .services .accordion-container .accordion .accordion-content img {
+    padding: 15px;
+    width: -webkit-fill-available;
+  }
+  .services .accordion-container .accordion .accordion-item button {
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    width: 100%;
+    padding: 17px 14px 17px 12px;
+    background: black;
+  }
+  .services .accordion-container .accordion .accordion-item button h2,
+  .services .accordion-container .accordion .accordion-item button h3 {
+    font-family: "Orbitron";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 140%;
+    color: white;
+  }
+  .services .accordion-container .accordion .accordion-item button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 100%;
+    transition: all 600ms linear;
+    will-change: opacity, max-height;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .services .accordion-container .accordion .accordion-item .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .services .accordion-container .accordion .accordion-item:last-child .accordion-content p {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  }
+  .loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .loading .word {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  .loading h2 {
+    color: white;
+    font-family: "Orbitron";
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  .loading h5 {
+    letter-spacing: 4px;
+    color: #e3e2e0;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 21px;
+    font-family: "Orbitron";
+    margin-top: 5px;
+  }
+  .cards-scroll {
+    padding: 80px 0;
+  }
+  .cards-scroll .card {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    border: 1px solid red;
+    text-align: center;
+    position: sticky;
+  }
+}/*# sourceMappingURL=style-mobile.css.map */
