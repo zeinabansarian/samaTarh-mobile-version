@@ -14,15 +14,15 @@ const observerOptions = {
   
   function observerCallback(entries) {
       entries.forEach(entry =>{
-        console.log(entry.target);
-
-        gsap.to(entry.target, {
-            y: 0,
-            opacity: 1,
-            stagger: 1,
-            duration: 0.7,
-            ease: "power1.out",
-          });
+        if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+                y: 0,
+                opacity: 1,
+                stagger: 1,
+                duration: 0.7,
+                ease: "power1.out",
+            });
+        }
     })
   }
   
