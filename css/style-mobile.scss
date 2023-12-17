@@ -191,9 +191,9 @@ html {
             width: fit-content;
             svg {
               position: absolute;
-              top: 0;
+              top: 5px;
               z-index: 1000;
-              left: 0;
+              left: 7px;
             }
 
             img {
@@ -237,11 +237,17 @@ html {
         margin: 25px;
         column-gap: 19px;
         .prevBtn , .nextBtn{
-          padding: 7.25px 10.88px;
-          border: 1px solid white;
+          a{
+            border: 1px solid white;
+            padding: 10.25px 10.88px 7.25px 10.88px;
+
+          }
+          a:active{
+            background-color: gray;
+          }
         }
       }
-      .swiper-pagination-fraction{
+      .swiper-pagination-custom{
         width: fit-content!important;
         position: relative;
         bottom: unset;
